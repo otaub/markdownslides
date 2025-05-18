@@ -107,7 +107,10 @@ MICRO_BATCH_SIZE=2
 LR=1.5e-4
 MIN_LR=1.5e-5
 INIT_METHOD_STD=0.00747017
+```
 
+---
+```bash
 OPTIMIZER_ARGS=" \
     --optimizer adam \
     --adam-beta1 0.9 \
@@ -120,7 +123,8 @@ OPTIMIZER_ARGS=" \
     --clip-grad 1.0 \
     --weight-decay 1e-1 \
     "
-
+---
+```bash
 GPT_ARGS=" \
     --num-layers $NLAYERS \
     --hidden-size $NHIDDEN \
@@ -189,7 +193,10 @@ CMD=" \
     --profile \
     --train-iters 5 \
     "
+```
 
+---
+```bash
 srun -N $Nodes \
     -n $((Nodes*8)) \
     --cpu-bind=mask_cpu:$BIND_MASK \
