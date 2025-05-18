@@ -123,6 +123,8 @@ OPTIMIZER_ARGS=" \
     --clip-grad 1.0 \
     --weight-decay 1e-1 \
     "
+```
+
 ---
 ```bash
 GPT_ARGS=" \
