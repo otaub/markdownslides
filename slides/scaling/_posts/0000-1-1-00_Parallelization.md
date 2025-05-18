@@ -4,6 +4,8 @@
 ---
 # Parallelization Strategies
 
+More detail at the [Ultra-Scale Playbook](huggingface.co/spaces/nanotron/ultrascale-playbook).
+
 ---
 ## Data Parallelism
 
@@ -20,15 +22,19 @@
 
 ---
 ## Tensor Parallelism
+![TP](https://nanotron-ultrascale-playbook.static.hf.space/assets/images/tp_diagram4.png)
 
 ---
 ## Sequence Parallelism
+![SP](https://nanotron-ultrascale-playbook.static.hf.space/assets/images/tp_sp_diagram.png)
 
 ---
 ## Context Parallelism
+![CP](https://nanotron-ultrascale-playbook.static.hf.space/assets/images/ring-attention.gif)
 
 ---
 ## Expert Parallelism
+![EP](https://nanotron-ultrascale-playbook.static.hf.space/assets/images/ep_schema.png)
 
 ---
 # Frameworks
@@ -36,8 +42,14 @@
 ---
 ## Native Pytorch
 
+- Provides (D)DP and FSDP
+- Wrap model
+- Launch processes 
+
 ---
 ## Megatron-LM
+
+- Pre-built
 
 ---
 ## NeMo
@@ -70,3 +82,4 @@
     - Good for comparing a single model on different number of GPUs
 - Model FLOP/s Utilization
     - Good for comparing frameworks and clusters
+- Time to convergence
