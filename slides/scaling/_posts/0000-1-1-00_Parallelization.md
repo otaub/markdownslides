@@ -227,8 +227,8 @@ srun -N $Nodes \
 
 - TorchTitan (3D parallelism + sharding)
 - Modalities (Some strategies missing, no PP)
-- DeepSpeed (original model sharding from MicroSoft)
-- Varuna (MicroSoft, PP + DP)
+- DeepSpeed (original model sharding from Microsoft)
+- Varuna (Microsoft, PP + DP)
 - GPTNeoX (EleutherAI, supports MI250Xs, 3D parallelism)
 - OSLO (EleutherAI)
 - Optimus-CC (Compressed messages)
