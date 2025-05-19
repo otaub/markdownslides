@@ -1,4 +1,4 @@
-# Parallelization and Scaling
+# Model Training Parallelization and Scaling
 
 
 ---
