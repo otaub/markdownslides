@@ -235,7 +235,7 @@ srun -N $Nodes \
 - OSLO (EleutherAI)
 - Optimus-CC (Compressed messages)
 - MosaicML/LLMFoundry
-
+- vsScale
 
 ---
 # Measuring Performance
